@@ -60,12 +60,11 @@ cropped_img=input_img[20:150,60:230]
 Display all the Transformed images.
 
 ## Program:
-python
-Developed By: P.Sanjay
-Register Number: 212220230042
+### Developed By: H.Dhayanitha
+### Register Number: 212220230010
 
 ### i)Image Translation
-
+```
 M=np.float32([[1,0,20],
              [0,1,50],
              [0,0,1]])
@@ -73,11 +72,9 @@ translated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(translated_img)
 plt.show()
-
-
-
+```
 ### ii) Image Scaling
-
+```
 M=np.float32([[1.5,0,0],
              [0,2,0],
              [0,0,1]])
@@ -85,9 +82,9 @@ scaled_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(scaled_img)
 plt.show()
-
+```
 ### iii)Image shearing
-
+```
 M_x=np.float32([[1,0.2,0],
                [0,1,0],
                [0,0,1]])
@@ -102,10 +99,9 @@ plt.show()
 plt.axis('off')
 plt.imshow(sheared_img_yaxis)
 plt.show()
-
-
+```
 ### iv)Image Reflection
-
+```
 M_x=np.float32([[1,0,0],
                [0,-1,rows],
                [0,0,1]])
@@ -120,10 +116,9 @@ plt.show()
 plt.axis('off')
 plt.imshow(reflected_img_yaxis)
 plt.show()
-
-
+```
 ### v)Image Rotation
-
+```
 angle=np.radians(45)
 M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
                [np.sin(angle),np.cos(angle),0],
@@ -132,21 +127,16 @@ rotated_img=cv2.warpPerspective(input_img,M,(cols,rows))
 plt.axis('off')
 plt.imshow(rotated_img)
 plt.show()
-
-
+```
 ### vi)Image Cropping
-
-
+```
 cropped_img=input_img[20:150,60:230]
 plt.axis('off')
 plt.imshow(cropped_img)
 plt.show()
-
-
-
+```
 ## Output:
 ### i)Image Translation
-
 
 ![1](https://user-images.githubusercontent.com/75235032/165504110-34858eab-eada-43ef-b0f1-b7b4f7b42faa.jpg)
 
@@ -154,16 +144,13 @@ plt.show()
 
 ![2](https://user-images.githubusercontent.com/75235032/165504119-d8ccca4c-b870-4bca-bdb1-c4d81d2f7844.jpg)
 
-
-
 ### iii)Image shearing
-![3](https://user-images.githubusercontent.com/75235032/165504131-8f02edd8-b041-413e-abe8-c135d56f130d.jpg)
 
+![3](https://user-images.githubusercontent.com/75235032/165504131-8f02edd8-b041-413e-abe8-c135d56f130d.jpg)
 
 ### iv)Image Reflection
 
 ![4](https://user-images.githubusercontent.com/75235032/165504146-b6b38a09-f7f0-4146-bee4-b7cc32c49685.jpg)
-
 
 ### v)Image Rotation
 
